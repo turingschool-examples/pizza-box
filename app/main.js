@@ -1,4 +1,5 @@
 import { app, BrowserWindow } from 'electron';
+import database from './database';
 
 let mainWindow = null;
 
@@ -12,3 +13,5 @@ app.on('ready', () => {
 
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 });
+
+global.database = database;

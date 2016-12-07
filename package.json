@@ -5,7 +5,8 @@
   "main": "app/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "electron-rebuild"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "babel-preset-electron": "^0.37.8",
     "babel-preset-react": "^6.16.0",
     "electron-prebuilt-compile": "^1.4.10",
+    "electron-rebuild": "^1.4.0",
     "eslint": "^3.11.1",
     "eslint-plugin-import": "^2.2.0"
   },
